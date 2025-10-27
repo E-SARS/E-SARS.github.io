@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="ESARS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ESARS - Embodied and Safe-Assured Robotic Systems </title>
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-body" style="background-image: url(./static/img/homebg.png); background-size: cover;">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column">
+                    <h1 class="title is-1" style="color: white">E-SARS (1nd Edition)</h1>
+                    <p class="title is-4" style="color: white"> Workshop on Embodied and Safe-Assured Robotic Systems</p>
+                    <p class="title is-4" style="color: white"> In conjunction with NeurIPS 2025; Date: November 30, December 1 | Hilton Mexico City</p>
+                    <!-- <p class="title is-4" style="color: white">V2X-Based Cooperative Autonomous Driving</p> -->
+                    <!-- <h1 class="is-is-5" style="color: white">In conjunction with NeurIPS 2025; Date: November 30, December 1 | Hilton Mexico City</h1> -->
+                     <!-- <b style="color: white"> Sunday 08:00 - 18:00 - Room: Ballroom C (Level 4)</b> -->
+                    <!-- <b style="color: white"> In conjunction with NeurIPS 2025; Date: November 30, December 1 | Hilton Mexico City</b> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+            <h2 class="subtitle has-text-centered">
+                <a href="#Motivation" class="button">Home</a>
+                <a href="#paper_track" class="button">Call for Paper</a>
+                <a href="#schedule" class="button">Schedule</a>
+                <a href="#speakers" class="button">Speakers</a>
+                <!--          <a href="#papers" class="button">Papers</a>-->
+                <!-- <a href="#accepted_papers" class="button">Accepted Papers</a> -->
+                <!-- <a href="#challenge" class="button">Challenge</a> -->
+                <a href="#organizers" class="button">Organizers</a>
+                <a href="#PC" class="button">Programm Committee</a>
+                <a href="#sponsors" class="button">Sponsors</a>
+                <!--          <div class="dropdown">-->
+                <!--            <span class="button">Prior Editions &nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></span>-->
+                <!--            <div class="dropdown-content">-->
+                <!--              <a href="index.html">CVPR 2025</a><br />-->
+                <!--              <a href="index_cvpr24.html">CVPR 2024</a><br />-->
+                <!--            </div>-->
+                <!--          </div>-->
+            </h2>
+
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Motivation">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Description and Motivation</h2>
+        <div class="content has-text-justified">
+        This workshop focuses on advancing safe and quality-assured embodied robotic systems. Embodied systems—including autonomous robots, self-driving vehicles, 
+        robotic arms, and humanoid robots—are increasingly deployed in safety-critical real-world scenarios. Ensuring their trustworthiness—encompassing safety, reliability, 
+        and predictable behavior—remains a pressing challenge. Despite notable progress in perception, reasoning, and control, many AI-based robotic systems still operate as “black boxes,”
+        often exhibiting unpredictable behaviors. Failures can emerge from complex sensorimotor interactions, adversarial inputs, or novel environments, leading to safety incidents and diminished user trust.
+        Recent studies have shown that the intricate interplay among sensors, actuators, and AI components exposes embodied
+         agents to a wide range of vulnerabilities, including sensor spoofing, adversarial attacks, and planning failures, which may result in unauthorized actions or physical harm. These risks underscore the 
+         urgent need for robust safety measures throughout system deployment. Rigorous testing and validation are essential to identify and mitigate such failure modes before real-world use. In high-stakes domains 
+         like autonomous driving, testing across diverse and complex scenarios is not only critical for verifying safety but also for earning public trust. Without confidence in their safety and reliability,
+          the widespread adoption of embodied robotic systems will remain limited and potentially hazardous.
+
+         
+        </div>
+        <h2 class="title">Topics of interest</h2>
+        <div class="content has-text-justified">
+        This workshop aims to unite researchers and industry experts in developing systematic methodologies for testing, validating, and certifying the trustworthiness of intelligent robots. 
+        Topics will cover a broad range of topic interests in testing, assurance and safety for embodied robotic systems, including but not limited to: 
+            <ul>
+                <li>Automated generation of test scenarios</li>
+                <li>Quality assurance for robotics that rely on artificial intelligence, with best practices and pipelines that preserve reliability in systems that learn</li>
+                <li>Formal verification and control guarantees, where formal methods or control theoretic techniques establish provable safety or stability</li>
+                <li>Evaluation metrics and benchmarks, emphasising quantitative indicators and standardised tasks for trustworthiness</li>
+                <li>Human in the loop trust evaluation, integrating user studies and feedback to measure and improve perceived reliability; and, time permitting</li>
+                <li>Ethical and societal implications, examining how testing and assurance connect with ethics, regulation and public acceptance</li>
+            </ul>
+        </div> 
+        <!-- <div class="content has-text-justified">
+        By addressing these questions, this workshop aims to define a research agenda for safe and quality-assured embodied robotic systems. Achieving trustworthiness in these systems demands 
+        a cross-disciplinary effort—integrating advances in machine learning, computer vision, planning, control, and formal methods—to enhance robustness and dependability. 
+        To this end, this workshop will foster dialogue across diverse research communities: from ML researchers developing new algorithms to roboticists engineering physical 
+        systems to verification experts designing assurance tools. Ultimately, we envision a future where interactive autonomous systems can be deployed at scale with confidence—supported by rigorous testing,
+         verification, and validation that provide clear, quantifiable evidence of their trustworthiness to developers, users, and regulators.
+         </div> -->
+    </div>
+</section>
+
+<section class="section" id="dates">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="paper_track">Call for Paper</h2>
+        We accept novel full 9-page papers for publication in the proceedings, and either shorter
+        4-page extended abstracts or 9-page papers of previously published work that will not
+        be included in the proceedings. Full papers should use the official <a
+            href="https://media.neurips.cc/Conferences/NeurIPS2025/Styles.zip">LaTeX</a> NeurIPS 2025 template. For extended abstracts we recommend to use the same template.
+        <ul>
+            <li><b>Submission Portal</b>: <a href="https://openreview.net/group?id=NeurIPS.cc/2025/Workshop_Mexico_City">OpenReview</a> </li>
+            <!-- <li><s><b>Paper Submission Opens</b>: July 3, 2025</s></li> -->
+            <li><b>Paper Submission Deadline</b>: <font color="red">November 5, 2025 (AoE – UTC-6)</font></li>
+            <!-- <li><b>Paper Submission Deadline</b>: July 22, 2025 (23:59 PST)</li> (no publication track) -> submission via e-mail to <a href="mailto:walter.zimmer@cs.tum.edu">walter.zimmer@cs.tum.edu</a> -->
+            <li><b>Notification to Authors</b>: November 7, 2025 (AoE – UTC-6)</li>
+            <li><b> Workshop Dates (In Person)</b>: November 30, December 1, 2025 (AoE – UTC-6)</li>
+           	
+            <!-- <li><b>Camera-ready submission</b>: August 15, 2025</li> -->
+        </ul>
+
+        <!-- This workshop aims to unite researchers and industry experts in developing systematic methodologies for testing, validating, and certifying the trustworthiness of intelligent robots. 
+        Topics will cover a broad range of topic interests in testing, assurance and safety for embodied robotic systems, including but not limited to:  
+        <h2 class="title">Topics of interest</h2>
+        <div class="content has-text-justified">
+            <ul>
+                <li>Automated generation of test scenarios</li>
+                <li>Quality assurance for robotics that rely on artificial intelligence, with best practices and pipelines that preserve reliability in systems that learn</li>
+                <li>Formal verification and control guarantees, where formal methods or control theoretic techniques establish provable safety or stability</li>
+                <li>Evaluation metrics and benchmarks, emphasising quantitative indicators and standardised tasks for trustworthiness</li>
+                <li>Human in the loop trust evaluation, integrating user studies and feedback to measure and improve perceived reliability; and, time permitting</li>
+                <li>Ethical and societal implications, examining how testing and assurance connect with ethics, regulation and public acceptance</li>
+            </ul>
+        </div> -->
+
+    </div>
+</section>
+
+<section class="section" id="dates">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="paper_track">Paper Awards</h2>
+        <ul>
+            <li><b>🏆 Best Paper Award</b></li>
+            <!-- <li><b>🏆 Best Paper Runner-Up Award</b></li>
+            <li><b>🏆 Best Application Paper Award</b></li> -->
+            <li><b>🏆 Best Poster Award </b></li>
+            <!-- <li><b>🏆 Best Keynote Presentation Award</b></li> -->
+        </ul>
+    </div>
+</section>
+
+<section class="section" id="schedule">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Schedule</h2>
+        <div class="content has-text-justified">
+            <table class="table table-striped">
+                <tr style="background-color: #fffddb">
+                    <td width="130">08:30 - 09:00</td>
+                    <td>Opening Remarks (Welcome & Introduction): <b>Dr. Hu Cao and Dr. Derui Zhu</b></td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>09:00 - 09:30</td>
+                    <td>Invited Talk 1 (Q&A): <b>Prof. Dr. Dawn Song (UC Berkeley, USA)</b> </br>Research Highlights: Human-Compatible and Provably Trustworthy AI
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>09:30 - 10:00</td>
+                    <td>Invited Talk 2 (Q&A): <b>Prof. Dr. Bo Li (UIUC, USA)</b> </br>Research Highlights: Trustworthy machine learning, with an emphasis on robustness, privacy, generalization, and interconnections
+                    </td>
+                </tr>
+                <tr style="background-color:#ffe7d3">
+                    <td>10:00 - 10:15</td>
+                    <td>
+                        Coffee Break 
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>10:15 - 10:45</td>
+                    <td>Invited Talk 3 (Q&A): <b>Prof. Dr. Angela Schoellig (TUM, Germany)</b> </br> Research Highlights: Enhancing the performance, safety, and autonomy of robots.
+                    </td>
+                </tr>
+                <tr style="background-color:#DDDDDD">
+                    <td>10:45 - 11:15</td>
+                    <td>
+                        Panel Discussion
+                    </td>
+                </tr>
+                <tr style="background-color:#e4f12d">
+                    <td>12:30 - 14:00</td>
+                    <td>Poster Session
+                    </td>
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>14:00 - 14:30</td>
+                    <td>Invited Talk 4 (Q&A): <b>Prof. Dr. Marco Pavone (Nvidia & Stanford University, USA)</b> </br> Research Highlights: Analysis, safe, and control of autonomous systems.
+                </tr>
+                <tr style="background-color:#e4ffde">
+                    <td>14:30 - 15:00</td>
+                    <td>Invited Talk 5 (Q&A): <b>Prof. Dr. Lei Ma (The University of Tokyo, Japan)</b> </br> General-purpose quality assurance solutions and engineering support for intelligent systems.
+                    </td>
+                </tr>
+                <tr style="background-color:#ffe7d3">
+                    <td>15:00 - 15:20</td>
+                    <td>
+                        Coffee Break 
+                    </td>
+                </tr>
+                <tr style="background-color:#DEF3FD">
+                    <td>15:20 - 17:20</td>
+                    <td>Oral Paper Presentation: <b>Oral Presentations (15 min each)</b> </td>
+                </tr>
+                <!-- <tr style="background-color:#DEF3FD">
+                    <td>14:30 - 14:40</td>
+                    <td>Oral Paper Presentation 2: <b>Lantao Li</b> </br> RG-Attn: Radian Glue Attention for Multi-modal Multi-agent Cooperative Perception </td>
+                </tr>
+                <tr style="background-color:#DEF3FD">
+                    <td>14:40 - 14:50</td>
+                    <td>Oral Paper Presentation: <b>Ruiyang Hao</b> </br> Research Challenges and Progress in the End-to-End V2X Cooperative Autonomous Driving Competition </td>
+                </tr>
+                <tr style="background-color:#DEF3FD">
+                    <td>14:50 - 15:00</td>
+                    <td>Oral Paper Presentation 4: <b>Yun Zhang</b> </br> MIC-BEV: Infrastructure-Based Multi-Camera Bird's-Eye-View Perception Transformer for 3D Object Detection </td>
+                </tr> -->
+               
+                <tr style="background-color:#fffddb">
+                    <td>17:20 - 17:30</td>
+                    <td>Awards Ceremony (Best Paper Award, Best Poster Award)</td>
+                </tr>
+                <tr style="background-color:#fffddb">
+                    <td>17:30 - 17:40</td>
+                    <td>Closing & Final Remarks & Announcements</td>
+                </tr>
+                <tr style="background-color:#fffddb">
+                    <td>17:40 - 18:00</td>
+                    <td>Group Picture with all organizers and speakers</td>
+                </tr>
+                <tr style="background-color:#f9e9fc">
+                    <td>19:00 - 21:00</td>
+                    <td>Workshop Reception: Social Mixer, Networking, Dinner (Location will be announced during the workshop)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="Invited Speakers">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="speakers">Invited Speakers</h2>
+
+        <br/>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://dawnsong.io/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="./static/img/Prof-Dawn-Song.avif">
+                            </figure>
+                        </div>
+                        <div class="column is-two-quarter">
+                            <p class="title is-4">Prof. Dr. Dawn Song</p>
+                            <p class="subtitle is-6">UC Berkeley, USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="./static/img/Seal_of_University_of_California,_Berkeley.svg">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://aisecure.github.io/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="./static/img/Bo Li.jpeg">
+                            </figure>
+                        </div>
+                        <div class="column is-two-quarter">
+                            <p class="title is-4">Prof. Dr. Bo Li</p>
+                            <p class="subtitle is-6">UIUC, USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="./static/img/uiuc-logo.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://www.dynsyslab.org/prof-angela-schoellig/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="./static/img/Angela-Schoellig.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Angela Schoellig</p>
+                            <p class="subtitle is-6">TUM, Germany</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                        src="./static/img/Tum_logo.gif">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://people.inf.ethz.ch/pomarc/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="./static/img/Pavone.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Marco Pavone</p>
+                            <p class="subtitle is-6">Stanford University & Nvidia, USA</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img
+                                   src="./static/img/stanford_nvidia.png">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="card">
+            <div class="card-content">
+                <a href="https://www.malei.org/" target="_blank">
+                    <div class="columns is-vcentered">
+                        <div class="column is-one-quarter">
+                            <figure class="image is-128x128">
+                                <img class="is-rounded"
+                                     src="./static/img/Lei-Ma-BW_F.jpg">
+                            </figure>
+                        </div>
+                        <div class="column">
+                            <p class="title is-4">Prof. Dr. Lei Ma</p>
+                            <p class="subtitle is-6">The University of Tokyo, Japan</p>
+                        </div>
+                        <div class="column is-one-quarter">
+                            <figure class="image is-256x256">
+                                <img
+                                        src="./static/img/University_of_Tokyo_logo.svg">
+                            </figure>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br/>
+
+    </div>
+</section>
+
+
+
+
+<!-- <section class="section" id="accepted_papers">
+    <div class="container is-max-desktop content">
+        <h2 class="title">Accepted Papers</h2>
+        <div class="content has-text-justified">
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    	Learning 3D Perception from Others' Predictions</h3>
+                <p class="paper-authors">Jinsu Yoo, Zhenyang Feng, Tai-Yu Pan, Yihong Sun, Cheng Perng Phoo, Xiangyu Chen, Mark Campbell, Kilian Q Weinberger, Bharath Hariharan, Wei-Lun Chao</p>
+                <a href="static/papers/1_Learning_3D_Perception_from_.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    Drive-R1: Bridging Reasoning and Planning in VLMs for Autonomous Driving with Reinforcement Learning</h3>
+                <p class="paper-authors">Yue Li, Meng Tian, Dechang Zhu, Jiangtong Zhu, Zhenyu Lin, Zhiwei Xiong, Xinhai Zhao</p>
+                <a href="static/papers/2_Drive_R1_Bridging_Reasoning_.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    Contextual-Personalized Adaptive Cruise Control via Fine-Tuned Large Language Models</h3>
+                <p class="paper-authors">Ziye Qin, Xue Yao, Chuheng Wei, Ang Ji, Guoyuan Wu, Zhanbo Sun</p>
+                <a href="static/papers/3_Contextual_Personalized_Adap.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    RG-Attn: Radian Glue Attention for Multi-modal Multi-agent Cooperative Perception</h3>
+                <p class="paper-authors">Lantao Li, Kang Yang, Wenqi Zhang, Xiaoxue Wang, Chen Sun</p>
+                <a href="static/papers/4_RG_Attn_Radian_Glue_Attentio.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    D3FNet: A Differential Attention Fusion Network for Fine-Grained Road Structure Extraction in Remote Perception Systems</h3>
+                <p class="paper-authors">Chang Liu, Yang Xu, Tamas Sziranyi</p>
+                <a href="static/papers/5_D3FNet_A_Differential_Attent.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    Understanding What Vision-Language Models See in Traffic: PixelSHAP for Object-Level Attribution in Autonomous Driving</h3>
+                <p class="paper-authors">Roni Goldshmidt</p>
+                <a href="static/papers/7_Understanding_What_Vision_La.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    SlimComm: Doppler-Guided Sparse Queries for Bandwidth-Efficient Cooperative 3-D Perception</h3>
+                <p class="paper-authors">Melih Yazgan, Qiyuan Wu, Iramm Hamdard, Shiqi Li, J. Marius Zoellner</p>
+                <a href="static/papers/8_SlimComm_Doppler_Guided_Spar.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    Robust Scenario Mining Assisted by Multimodal Semantics</h3>
+                <p class="paper-authors">Yifei Chen, Ross Greer</p>
+                <a href="static/papers/10_Robust_Scenario_Mining_Assi.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+
+             <div class="paper-item">
+                <h3 class="paper-title">	
+                    MAP: End-to-End Autonomous Driving with Map-Assisted Planning</h3>
+                <p class="paper-authors">Huilin Yin, Yiming Kan, Daniel Watzenig</p>
+                <a href="static/papers/11_MAP_End_to_End_Autonomous_D.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    The Role of Radar in End-to-End Autonomous Driving</h3>
+                <p class="paper-authors">Philipp Wolters, Johannes Gilg, Torben Teepe, Gerhard Rigoll</p>
+                <a href="static/papers/12_The_Role_of_Radar_in_End_to.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    Improving Event-Phase Captions in Multi-View Urban Traffic Videos via Prompt-Aware LoRA Tuning of Vision Language Models</h3>
+                <p class="paper-authors">Ricardo Ornelas, Alton Chao, Shyam Gupta, Edmund Chao, Ross Greer</p>
+                <a href="static/papers/13_Improving_Event_Phase_Capti.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    Research Challenges and Progress in the End-to-End V2X Cooperative Autonomous Driving Competition</h3>
+                <p class="paper-authors">Ruiyang Hao, Haibao Yu, Jiaru Zhong, Chuanye Wang, Jiahao Wang, Yiming Kan, Wenxian Yang, Siqi Fan, Huilin Yin, Jianing Qiu, Yao Mu, Jiankai Sun, Li Chen, Walter Zimmer, Dandan Zhang, Shanghang Zhang, Mac Schwager, Ping Luo, Zaiqing Nie</p>
+                <a href="static/papers/14_Research_Challenges_and_Pro.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+             <div class="paper-item">
+                <h3 class="paper-title">	
+                    MIC-BEV: Infrastructure-Based Multi-Camera Bird's-Eye-View Perception Transformer for 3D Object Detection</h3>
+                <p class="paper-authors">Yun Zhang, Zhaoliang Zheng, Johnson Liu, Zhiyu Huang, Zewei Zhou, Zonglin Meng, Tianhui Cai, Jiaqi Ma</p>
+                <a href="static/papers/15_MIC_BEV_Infrastructure_Base.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    V2XPnP: Vehicle-to-Everything Spatio-Temporal Fusion for Multi-Agent Perception and Prediction</h3>
+                <p class="paper-authors">Zewei Zhou, Hao Xiang, Zhaoliang Zheng, Seth Z. Zhao, Mingyue Lei, Yun Zhang, Tianhui Cai, Xinyi Liu, Johnson Liu, Maheswari Bajji, Xin Xia, Zhiyu Huang, Bolei Zhou, Jiaqi Ma</p>
+                <a href="static/papers/16_V2XPnP_Vehicle_to_Everythin.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+            <div class="paper-item">
+                <h3 class="paper-title">	
+                    Scene-Aware Location Modeling for Data Augmentation in Automotive Object Detection</h3>
+                <p class="paper-authors">Jens Petersen</p>
+                <a href="static/papers/18_Scene_Aware_Location_Modeli.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+            <div class="paper-item">
+                <h3 class="paper-title">	                	
+                    Multi-modal Large Language Model for Training-free Vision-based Driver State</h3>
+                <p class="paper-authors">Chuanfei Hu, Xinde Li, Hang Shao</p>
+                <a href="static/papers/19_Multi_modal_Large_Language_.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>
+             <div class="paper-item">
+                <h3 class="paper-title">		
+                    HetroD: A High-Fidelity Drone Dataset and Benchmark for Heterogeneous Traffic in Autonomous Driving</h3>
+                <p class="paper-authors">Yu-Hsiang Chen, Wei-Jer Chang, Wei Zhan, Masayoshi Tomizuka, Yi-Ting Chen</p>
+                <a href="static/papers/20_HetroD_A_High_Fidelity_Dron.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>   
+             <div class="paper-item">
+                <h3 class="paper-title">	
+                    	V2X-based Logical Scenario Understanding with Vision-Language Models</h3>
+                <p class="paper-authors">Cheng-Liang Chi, Zi-Hui Li, Yu-Hsiang Chen, Yi-Ting Chen</p>
+                <a href="static/papers/21_V2X_based_Logical_Scenario_.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>                         
+            <div class="paper-item">
+                <h3 class="paper-title">	               	
+                    Cross-camera Monocular 3D Detection for Autonomous Racing</h3>
+                <p class="paper-authors">Elena Govi, Davide Malvezzi, Davide Sapienza, Marko Bertogna</p>
+                <a href="static/papers/22_Cross_camera_Monocular_3D_D.pdf" class="paper-link" target="_blank">
+                    <i class="fas fa-file-pdf"></i> PDF
+                </a>
+            </div>   
+                        <style>
+                .paper-item {
+                    margin-bottom: 2em;
+                    padding: 1em;
+                    background-color: #f8f9fa;
+                    border-radius: 5px;
+                }
+                .paper-title {
+                    color: #1b427d;
+                    margin-bottom: 0.5em;
+                }
+                .paper-authors {
+                    color: #666;
+                    margin-bottom: 0.8em;
+                }
+                .paper-link {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.5em;
+                    color: #d14;
+                    text-decoration: none;
+                }
+                .paper-link:hover {
+                    text-decoration: underline;
+                }
+            </style>
+        </div>
+    </div>
+</section> -->
+
+
+
+<section class="section" id="Organizers">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="organizers">Organizers</h2>
+
+        <div class="columns is-centered is-variable is-0">
+            <div class="column is-one-quarter">
+                <a href="https://hucaofighting.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="./static/img/HC3_s.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Hu Cao</p>
+                                    <p class="subtitle is-7">Technical University of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+
+
+        <!-- <div class="columns is-centered is-variable is-0">
+            <div class="column is-one-quarter">
+                <a href="http://walzimmer.github.io">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/22540236?v=4"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Walter Zimmer</p>
+                                    <p class="subtitle is-7">Technical University of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+             -->
+
+            <div class="column is-one-quarter">
+                <a href="https://scholar.google.com/citations?user=iELr97kAAAAJ&hl=en">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="./static/img/DeruiZhu.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Derui Zhu</p>
+                                    <p class="subtitle is-7">Technical University of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://www.ce.cit.tum.de/air/team/prof-dr-ing-habil-alois-knoll/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://how-to-business.handelsblatt.com/wp-content/uploads/2023/02/knoll.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr.-Ing. habil. Alois C. Knoll</p>
+                                    <p class="subtitle is-7">Technical University of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://people.eecs.berkeley.edu/~shangding.gu/index.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="./static/img/shangding.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Shangding Gu</p>
+                                    <p class="subtitle is-7">UC Berkeley</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="columns is-centered is-variable is-0">
+
+            <div class="column is-one-quarter">
+                <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="./static/img/spanos.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr. Costas Spanos</p>
+                                    <p class="subtitle is-7">UC Berkeley</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://yiming-tang-cs.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="./static/img/Yiming.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr. Yiming Tang</p>
+                                    <p class="subtitle is-7">Rochester Institute of Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://wellido.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="./static/img/qianghu.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Prof. Dr. Qiang Hu</p>
+                                    <p class="subtitle is-7">Tianjin University</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://scholar.google.com/citations?user=eMC-gQUAAAAJ&hl=en">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="static/img/jiahui.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Jiahui Geng</p>
+                                    <p class="subtitle is-7">MBZUAI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+           
+
+
+        </div>
+        <div class="columns is-centered is-variable is-0">
+
+            <div class="column is-one-quarter">
+                <a href="https://www.ce.cit.tum.de/air/people/xingcheng-zhou-msc/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="static/img/xingcheng.jpeg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Xingcheng Zhou</p>
+                                    <p class="subtitle is-7">Technical University of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+             <div class="column is-one-quarter">
+                <a href="http://walzimmer.github.io">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded" src="https://avatars.githubusercontent.com/u/22540236?v=4"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Walter Zimmer</p>
+                                    <p class="subtitle is-7">Technical University of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="column is-one-quarter">
+                <a href="https://rruisong.github.io/">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="https://i1.rgstatic.net/ii/profile.image/1160239365795840-1653634029979_Q512/Rui-Song-47.jpg"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Dr. Rui Song</p>
+                                    <p class="subtitle is-7">UCLA & TUM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            
+
+            <div class="column is-one-quarter">
+                <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/stephany-berrioperez.html">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img class="is-rounded"
+                                     src="./static/img/XYJ.png"
+                                     alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content" style="overflow-x: unset;">
+                                    <p class="title is-7 is-spaced">Yingjie Xu</p>
+                                    <p class="subtitle is-7">Technical University of Munich</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+          
+
+        </div>
+        
+
+    
+    </div>
+</section>
+
+
+<section class="section" id="PC">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="PC">Program Committee</h2>
+        <div class="pc-members">
+            <div class="member">
+                <a href="https://profiles.ucr.edu/app/home/profile/barth" target="_blank">Prof. Dr. Matthew Barth</a>
+                <p>UCR</p>
+            </div>
+            <div class="member">
+                <a href="https://see-en.tongji.edu.cn/about_Us/Departments/Sino_German_Research_Center_for_Intelligent_Scie/Contact_Us_.htm" target="_blank">Prof. Dr. Huilin Yin</a>
+                <p>Tongji Uni.</p>
+            </div>
+            <div class="member">
+                <a href="https://ziranw.github.io/" target="_blank">Prof. Dr. Ziran Wang</a>
+                <p>Purdue Uni.</p>
+            </div>
+            <div class="member">
+                <a href="https://www-lmd.ist.hokudai.ac.jp/member/guang-li/" target="_blank">Prof. Dr. Guang Li</a>
+                <p>Hokkaido University</p>
+            </div>
+            
+            <div class="member">
+                <a href="https://www.cs.cit.tum.de/camp/members/senior-research-scientists/federico-tombari/" target="_blank">PD. Dr. habil. Federico Tombari</a>
+                <p>Google</p>
+            </div>
+            <div class="member">
+                <a href="https://hangqiu.github.io/" target="_blank">Prof. Dr. Hang Qiu</a>
+                <p>UCR</p>
+            </div>
+            <div class="member">
+                <a href="https://jiachenli94.github.io/" target="_blank">Prof. Dr. Jiachen Li</a>
+                <p>UCR</p>
+            </div>
+            <div class="member">
+                <a href="https://vztu.github.io/" target="_blank">Prof. Dr. Zhengzhong Tu</a>
+                <p>TAMU</p>
+            </div>
+            <div class="member">
+                <a href="https://www.linkedin.com/in/christophpilz/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=at" target="_blank">Dr. Christoph Pilz</a>
+                <p>Virtual Vehicle</p>
+            </div>
+            <div class="member">
+                <a href="https://www.linkedin.com/in/markusschratter?originalSubdomain=at" target="_blank">Dr. Markus Schratter</a>
+                <p>Virtual Vehicle</p>
+            </div>
+        
+            <div class="member">
+                <a href="https://www.linkedin.com/in/felix-neumann-7993b0167/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=de" target="_blank">Felix Neumann</a>
+                <p>Siemens</p>
+            </div>
+            <div class="member">
+                <a href="https://online.tugraz.at/tug_online/visitenkarte.show_vcard?pPersonenGruppe=3&pPersonenId=BDB643F60C7AC4A1" target="_blank">Kenan Ahmic</a>
+                <p>Graz Uni. of Tech.</p>
+            </div>
+            <div class="member">
+                <a href="https://vveicao.github.io/" target="_blank">Wei Cao</a>
+                <p>UIUC</p>
+            </div>
+            <div class="member">
+                <a href="https://www.linkedin.com/in/markusgross42/?originalSubdomain=de" target="_blank">Markus Gross</a>
+                <p>Fraunhofer IVI & TUM</p>
+            </div>
+            <div class="member">
+                <a href="https://scholar.google.com/citations?user=qspzHRgAAAAJ&hl=en" target="_blank">Yinlong Liu</a>
+                <p>City University of Macau</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .pc-members {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+        text-align: center;
+    }
+    
+    .member {
+        flex: 1; 
+        min-width: 150px; 
+    }
+    
+    .member p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: gray;
+    }
+</style>
+
+
+
+<section class="section" id="Sponsors">
+    <div class="container is-max-desktop content">
+        <h2 class="title" id="sponsors">Sponsors</h2>
+        We are currently seeking for further sponsorship opportunities and would be delighted to discuss potential
+        collaborations. Interested parties are kindly requested to contact us via email at <a href="mailto:hu.cao@tum.de">hu.cao@tum.de</a> for
+        further details.
+    </div>
+</section>
+
+<section class="hero">
+    <div class="hero-body" style="background-color: #e2e6eb;">
+        <div class="content" align="center">
+             <img src="./static/img/NeurIPS2025.png" style="height: 170px; "/>
+        </div>
+    </div>
+</section>
+
+</body>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
