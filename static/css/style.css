@@ -14,3 +14,11 @@
     object-fit: cover;
     border-radius: 12px;
 }
+
+.fixed-cell {
+    width: 350px;      /* adjust width */
+    max-width: 350px;
+    word-wrap: break-word;
+    white-space: normal;
+    vertical-align: top;
+  }
