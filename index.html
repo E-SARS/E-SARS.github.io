@@ -218,15 +218,15 @@
                     <details>
                       <summary class="toggle-summary"><b>Prof. Sergey Levine (UC Berkeley / Physical Intelligence)</b></summary>
                       <div>
-                         <!-- Add bio here -->
+                         Sergey Levine received a BS and MS in Computer Science from Stanford University in 2009, and a Ph.D. in Computer Science from Stanford University in 2014. He joined the faculty of the Department of Electrical Engineering and Computer Sciences at UC Berkeley in fall 2016. His work focuses on machine learning for decision making and control, with an emphasis on deep learning and reinforcement learning algorithms. Applications of his work include autonomous robots and vehicles, as well as applications in other decision-making domains. His research includes developing algorithms for end-to-end training of deep neural network policies that combine perception and control, scalable algorithms for inverse reinforcement learning, deep reinforcement learning algorithms, and more.
                       </div>
                     </details>
                 
                     <!-- Title (Abstract toggle) -->
                     <details>
-                      <summary class="toggle-summary"><b>Tentative</b></summary>
+                      <summary class="toggle-summary"><b>Vision-Language-Action Models</b></summary>
                       <div>
-                        <!-- Add abstract here -->
+                        Vision-language-action (VLA) models enable multimodal language models to address challenges in robotics and control. While the basic foundations of VLAs are relatively simple, integrating action outputs into vision-language backbones, these models open up a wide range of new research topics. VLAs can use complex reasoning to solve temporally extended problems, refine their behavior through in-context learning, and utilize reinforcement learning to improve from experience. These new capabilities provide for exciting opportunities as well as challenges, which I will discuss in this talk.
                       </div>
                     </details>
                 
@@ -264,15 +264,19 @@
                     <details>
                       <summary class="toggle-summary"><b>Prof. Krzysztof Czarnecki (University of Waterloo)</b></summary>
                       <div>
-                         <!-- Add bio here -->
+                         Krzysztof Czarnecki is a Professor of Electrical and Computer Engineering and a University Research Chair at the University of Waterloo, where he leads the Waterloo Intelligent Systems Engineering (WISE) Laboratory. He currently also serves as an Associate Director of the Waterloo Centre for Automotive Research (WatCAR).  His research focuses on assuring the safety of AI systems and driving behavior. In 2018, he co-led the development of the first autonomous vehicle tested on public roads in Canada. He has made significant contributions to automotive AI and software safety standards, including SAE J3164 and ISO 8800. Before joining the University of Waterloo, he worked at DaimlerChrysler Research in Germany (1995-2002), where he advanced software development practices and technologies for enterprise, automotive, and aerospace sectors. His work has been recognized with numerous awards, including the Premier's Research Excellence Award (2004) and the British Computing Society’s Upper Canada Award for Outstanding Contributions to the IT Industry (2008). He has also received twelve Best Paper Awards, two ACM Distinguished Paper Awards, and five Most Influential Paper Awards.
                       </div>
                     </details>
                 
                     <!-- Title (Abstract toggle) -->
                     <details>
-                      <summary class="toggle-summary"><b>Tentative</b></summary>
+                      <summary class="toggle-summary"><b>Systematizing the Unusual: A Taxonomy-Driven Dataset for Vision–Language Model Reasoning About Edge Cases in Traffic</b></summary>
                       <div>
-                        <!-- Add abstract here -->
+                        One of the central challenges in developing robust vision–language models (VLMs) for real-world autonomy is their ability to recognize, interpret, and reason about rare and hazardous situations—so-called edge cases. Unlike routine traffic patterns, which are well-represented in large-scale datasets, these scenarios occur infrequently, are highly diverse, and often involve subtle contextual cues that challenge both object detection and semantic understanding.
+ 
+                        EdgeScenes is a new dataset under development at the WISE Lab that directly targets this limitation. It systematically captures and organizes rare road situations using a structured, ontology-driven taxonomy of hazardous conditions spanning infrastructure anomalies, abnormal road-user behavior, foreign objects, environmental extremes, and complex interactions. The dataset is constructed from crowdsourced video footage and annotated with a rich multimodal schema covering over 300 fine-grained hazardous conditions, along with temporal extents and contextual tags. As such, it establishes a testbed specifically designed for evaluating VLMs on out-of-distribution, safety-critical driving scenarios.
+ 
+                        This talk will present the motivation, design principles, and annotation methodology behind EdgeScenes, with particular emphasis on how taxonomy-based labeling enables systematic identification of edge cases and gaps. I will discuss key insights gathered during dataset construction, including patterns in real-world hazard emergence and challenges in visual–semantic grounding. Finally, I will report early experimental results using frontier VLMs, showing that while current models can detect a broad range of hazards beyond closed-vocabulary vision systems, they still exhibit severe limitations, showing both high false positive and false negative rates in recognizing road hazards. These findings point to an urgent need for progress in improving the reliability of VLMs to support trustworthy multimodal perception in autonomous systems.
                       </div>
                     </details>
                 
@@ -286,15 +290,15 @@
                     <details>
                       <summary class="toggle-summary"><b>Dr. Mozhgan Nasr (University of Waterloo)</b></summary>
                       <div>
-                         <!-- Add bio here -->
+                         Dr. Mozhgan Nasr Azadani is a Postdoctoral Fellow at the Wise Lab, University of Waterloo, specializing in the intersection of autonomous driving and natural language processing. Her research focuses on developing trustworthy, interactive, and scalable multimodal models that integrate vision and language to enhance perception, understanding, reasoning, and decision-making in autonomous systems such as vehicles and robots. She completed her Ph.D. in Computer Science at the University of Ottawa, where her work centered on driving behavior analysis and prediction for safe autonomous vehicles.  Her work has been recognized with the prestigious NSERC Postdoctoral Fellowship.
                       </div>
                     </details>
                 
                     <!-- Title (Abstract toggle) -->
                     <details>
-                      <summary class="toggle-summary"><b>Tentative</b></summary>
+                      <summary class="toggle-summary"><b>Toward Efficient and Reliable Vision–Language Models for Real-World Autonomous Systems</b></summary>
                       <div>
-                        <!-- Add abstract here -->
+                        Vision language models (VLMs) are becoming central components in autonomous systems, enabling capabilities such as scene understanding, instruction following, and high-level decision support. However, their deployment in real-world environments remains constrained by two fundamental challenges: the need for reliable visual perception and the need for computational efficiency under strict latency and resource budgets. In this talk, I will present a unified research trajectory that addresses these challenges through new designs for knowledge-efficient, token-efficient, and expert-efficient multimodal models. I will showcase three complementary advances: HAWAII, a hierarchical distillation framework that transfers the strengths of multiple vision experts into a single lightweight encoder for improved visual understanding; LEO-MINI, an efficient multimodal model that dramatically reduces visual token redundancy using conditional token reduction and multi-modal expert routing; and Leo, a principled mixture-of-vision-encoders design that reveals simple, effective fusion strategies for high-resolution perception. Together, these contributions show how to achieve strong visual reasoning under tight computational and latency constraints offering practical, deployable VLM solutions for autonomous systems operating in complex, dynamic, and safety-critical environments.
                       </div>
                     </details>
                 
